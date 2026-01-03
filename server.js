@@ -9,6 +9,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static('backend/frontend'));
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD,
