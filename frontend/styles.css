@@ -172,6 +172,113 @@ header {
   text-decoration: underline;
 }
 
+/* Live client systems */
+.section-subtitle {
+  text-align: center;
+  color: #ccc;
+  margin: -15px auto 30px;
+  max-width: 680px;
+  line-height: 1.5;
+}
+
+.project-card.featured {
+  width: 300px;
+  text-align: left;
+  padding: 14px 16px 18px;
+}
+
+.project-card.featured h3 {
+  font-size: 1.1rem;
+  margin: 12px 0 6px;
+}
+
+.card-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0a192f;
+  border: 1px solid rgba(0, 255, 195, 0.25);
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 0;
+  display: block;
+}
+
+.status-live {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #00ffc3;
+  color: #062a24;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.status-live::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #062a24;
+}
+
+.client-line {
+  color: #9fb3c8;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.project-card.featured p:not(.client-line) {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #e6edf3;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0 4px;
+}
+
+.tech-tags span {
+  background: rgba(0, 255, 195, 0.1);
+  border: 1px solid rgba(0, 255, 195, 0.3);
+  color: #7fffe0;
+  font-size: 0.72rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  color: #00ffc3;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 /* Contact Me Section */
 .contact-section {
   background: rgba(0, 0, 0, 0.5);
@@ -241,6 +348,44 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+  header {
+    position: sticky;
+    top: 0;
+    padding: 8px 12px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .site-title {
+    font-size: 1.15rem;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+    width: 100%;
+  }
+
+  .nav {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .nav ul li a {
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 600px) {
   .project-container {
     flex-direction: column;

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vinc$'s Portfolio</title>
+  <title>Vincent Otieno — Software Developer & Network Engineer</title>
+  <meta name="description" content="Portfolio of Vincent Otieno, a full-stack developer and network engineer in Kenya building production ERP, booking and learning systems." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="styles.css" />
@@ -19,6 +20,7 @@
     <nav class="nav">
       <ul>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#live-systems">Live Systems</a></li>
         <li><a href="#recent-projects">Recent Projects</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#certifications">Certifications</a></li>
@@ -30,7 +32,57 @@
     <!-- About -->
     <section id="about" class="section fade-in">
       <h2>About Me</h2>
-      <p>I am a network technician working with an ISP, where my role involves wireless installation and management, hotspot management, fibre to the home installation and management using EPON at the NOC, and configuration of networking devices. With a strong background in Networking and Telecommunications from the University of Eastern Africa, Baraton, I am passionate about website development. I have hands-on experience and proficiency in full-stack software development, including HTML, CSS, React, TypeScript, and Node.js. Below are some of my developed projects showcasing my skills and experience in building efficient and innovative web applications.</p>
+      <p>I am a network technician working with an ISP, where my role involves wireless installation and management, hotspot management, fibre to the home installation and management using EPON at the NOC, and configuration of networking devices. With a strong background in Networking and Telecommunications from the University of Eastern Africa, Baraton, I am passionate about website development. I have hands-on experience and proficiency in full-stack software development, including HTML, CSS, React, TypeScript, and Node.js. I also build and ship production client systems — higher-education and community-programme ERPs and an Airbnb-style booking platform — using Laravel, React, Flutter and Supabase. Below are some of my developed projects showcasing my skills and experience in building efficient and innovative web applications.</p>
+    </section>
+
+    <!-- Live Client Systems -->
+    <section id="live-systems" class="section fade-in">
+      <h2>Live Client Systems</h2>
+      <p class="section-subtitle">Production systems I designed and built for education, hospitality and community organisations in Kenya.</p>
+
+      <div class="project-container">
+        <div class="project-card featured">
+          <div class="card-media">
+            <img src="shots/tich-login.png" alt="TICH ERP sign-in screen" />
+            <span class="status-live">Live</span>
+          </div>
+          <h3>TICH ERP</h3>
+          <p class="client-line">tich.africa · Tropical Institute of Community Health and Development, Kisumu</p>
+          <p>A full higher-education ERP covering admissions, academic records, finance with M-PESA fee payments, HR and payroll, procurement, quality assurance and M&amp;E, plus student and staff self-service portals and a Flutter mobile app. Role-based access, multi-campus operations and a hash-chained audit trail run across the institution.</p>
+          <div class="tech-tags">
+            <span>Laravel</span><span>MySQL</span><span>Blade + Tailwind</span><span>Flutter</span><span>M-PESA</span>
+          </div>
+          <a class="project-link" href="https://tich.africa" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Visit live system</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="card-media">
+            <img src="shots/kisumubnbs.png" alt="Winning BnB & Accommodations homepage" />
+            <span class="status-live">Live</span>
+          </div>
+          <h3>Winning BnB &amp; Accommodations</h3>
+          <p class="client-line">kisumubnbs.company · Short-stay booking platform, Kisumu</p>
+          <p>An Airbnb-style booking site for a Kisumu accommodation agent. Guests browse B&amp;Bs and hotels, filter by date and arrival time, preview rooms with photo and video tours, book instantly, manage or cancel stays from a guest account, and request local experiences. The admin back office handles room listings, a live occupancy calendar, walk-ins, payment status and private post-stay ratings.</p>
+          <div class="tech-tags">
+            <span>React</span><span>Supabase</span><span>Tailwind</span><span>Vercel</span>
+          </div>
+          <a class="project-link" href="https://www.kisumubnbs.company" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Visit live system</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="card-media">
+            <img src="shots/wirelakes.png" alt="CTP-WireLakes programme homepage" />
+            <span class="status-live">Live</span>
+          </div>
+          <h3>CTP-WireLakes CTPE ERP</h3>
+          <p class="client-line">wirelakestechnologies.com · Community technology programme, Kisumu</p>
+          <p>An ERP for a programme that trains vulnerable young people and school-leavers, certifies them as E-Fundis and connects them to paid community projects. It runs promoter recruitment, community needs and beneficiary records, training and certification, the E-Fundi job marketplace, project execution and payouts, construction, technology services, e-waste, finance and procurement, and monitoring, evaluation and GIS reporting — with a Flutter mobile app.</p>
+          <div class="tech-tags">
+            <span>Laravel</span><span>MySQL</span><span>Sanctum</span><span>Flutter</span><span>cPanel</span>
+          </div>
+          <a class="project-link" href="https://wirelakestechnologies.com/" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Visit live system</a>
+        </div>
+      </div>
     </section>
 
     <!-- Projects -->
@@ -188,7 +240,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Vincent. All rights reserved.</p>
+    <p>&copy; 2026 Vincent Otieno. All rights reserved.</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
